@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css/"> 
+    <link rel="stylesheet" href="./css/styles.css"> 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -16,12 +16,12 @@
 </head>
 <body>
     <header class="header">
-<div class="container"
+<div class="container">
 <a class="logo-header" href="index.html">WebStudio</a>
     
  <nav class="nav">       
-    <ul class="nav-list ">
-      <li class="nav-list-item "><a class="nav-list-link" href="/Agencja">About</a></li>
+    <ul class="nav-list">
+      <li class="nav-list-item"><a class="nav-list-link" href="/Agencja">About</a></li>
       <li class="nav-list-item"><a class="nav-list-link" href="portfolio.html">Portfolio</a></li>
       <li class="nav-list-item"><a class="nav-list-link" href="/Kontakt">Contact</a></li>
     </ul>
@@ -35,11 +35,17 @@
 </header>
 
 <main>
-  <h1 class="main-header" >EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-  <button class="modal-btn" type="button">Zamów usługe</button>
 
-  <section>
+  <section class="main-title">
+    <div class="container">
+  <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+  <button class="modal-btn" type="button">Zamów usługe</button>
+    </div>  
+  </section>
+
 <!--Nasze atuty-->
+  <section class="benefits">
+<div class="container">
 
 <ul class="our-benefits-list" >
   <li class="our-benefits-item">
@@ -59,10 +65,13 @@
     <p class="our-benefits-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</p>
   </li>
 </ul>
+</div>
 </section>
 
 <section class="what-we-do">
+  
 <h2 class="what-we-do-title">Czym się zajmujemy</h2>
+<div class="container">
 <ul class="what-we-do-list">
     <li class="what-we-do-item">
       <img class="what-we-do-photo"
@@ -88,21 +97,27 @@ width="370"
 height="294"
 /></li>
 </ul>
+  </div>
 </section>
 
 <section class="our-team">
-<h2 class="our-team-title" >Nasz zespół</h2>
+ <div class="container">
+  <h2 class="our-team-title">Nasz zespół</h2>
 
-<ul class="our-team-list">
+  <ul class="our-team-list">
   <li class="our-team-item">
+    <figure>
 <img class="our-team-photo"
   src="images/img4.jpg"
   alt="Mężczyzna"
   width="270"
   height="260"
 />
+<figcaption>
     <h3 class="our-team-name">John Doe</h3>
     <p class="our-team-job">Product Designer</p>
+</figcaption>
+</figure>    
 </li>
 
 <li class="our-team-item">
@@ -138,6 +153,7 @@ height="260"
     <p class="our-team-job">UI Designer</p>
 </li>
 </ul>
+</div>
 </section>
     </main>
 
