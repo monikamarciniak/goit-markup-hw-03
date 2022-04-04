@@ -41,6 +41,7 @@ img {
     display: flex;
     align-items: center;
     padding-top: 24px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .nav, 
@@ -60,7 +61,7 @@ img {
 }
 .contact-mail {
     margin-right: 50px;
-    margin-left: 371px;
+    margin-left: 350px;
 }
 
 
@@ -124,12 +125,14 @@ line-height: 1.364;
 letter-spacing: 0.06em;
 text-align: center;
 color: #FFFFFF;
-
+padding-top: 200px;
 height: 120px;
 width: 696px;
-padding: 200px 452px 0px;
+justify-content: center;
 margin-left: auto;
 margin-right: auto;
+margin-bottom: 40px;
+
 }
 
 .modal-btn {
@@ -137,7 +140,6 @@ margin-right: auto;
     font-weight: 700;
     line-height: 1.875;
     letter-spacing: 0.06em;
-    text-align: center;
     background-color: var(--hover-color);
     color: #FFFFFF;
     cursor: pointer;
@@ -145,8 +147,13 @@ margin-right: auto;
     width: 200px;
     border-radius: 4px;
     padding: 10px 35px;
-    margin: 30px 700px;
+    margin-left: 700px;
+    margin-top: 100px;
+    box-shadow: 0px 4px  rgba(0, 0, 0, 0.15);
+    border-style: none;
+
 }
+
 /*===END HEADER===*/
 
 /*===OUR BENEFITS===*/
@@ -238,13 +245,18 @@ letter-spacing: 0.03em;
 text-align: center;
 padding: 102px 0px 50px;
 }
-.our-team-photo {
-    margin-right: 30px;
-}
 
-.figure,
-.figcaption {
-    background-color: aqua;
+.our-team-card {
+    background-color: #FFFFFF;
+    height: 368px;
+width: 270px;
+left: nullpx;
+top: nullpx;
+border-radius: 4px;
+box-shadow: 0px 2px 1px 0px #00000033;
+box-shadow: 0px 1px 1px 0px #00000024;
+box-shadow: 0px 1px 3px 0px #0000001F;
+margin-right: 30px;
 }
 
 .our-team-name {
@@ -252,7 +264,8 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.188;
 letter-spacing: 0.03em;
-text-align: center;  
+text-align: center;
+padding-top: 30px;
 }
 .our-team-job {
 font-size: 16px;
@@ -264,32 +277,28 @@ color: var(--secondary-color);
 }
 /*===END OUR TEAM===*/
 
-/*===FOOTER===*/
-.logo-footer {
-    font-family: var(--secondary-font);
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-    text-align: left;
-    text-decoration: none;
-}
-
-.contact-list {   
-font-size: 14px;
-font-weight: 400;
-line-height: 1.714;
-letter-spacing: 0.03em;
-text-align: left;
-text-decoration: none;
-font-style: normal;
-/* color: #FFFFFF; */
-}
-/*===END FOOTER===*/
-
-
 
 /*===PORTFOLIO===*/
+
+.portfolio-btn-list {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 94px;
+    margin-bottom: 34px;
+}
+
+.portfolio-project-list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 1360px;
+width: 1170px;
+margin-left: auto;
+margin-right: auto;
+top: 174px;
+justify-content:space-between;
+}
+
 .portfolio-btn {
 font-size: 16px;
 font-weight: 500;
@@ -297,6 +306,28 @@ line-height: 1.625;
 letter-spacing: 0.03em;
 text-align: center;
 cursor: pointer;
+
+margin-right: 8px;
+background: #F5F4FA;
+height: 38px;
+width: 114px;
+left: 740px;
+top: 174px;
+border-radius: 4px;
+border-color: #F5F4FA;
+}
+
+.portfolio-project-card {
+    border: 1px solid #EEEEEE;
+    height: 404px;
+width: 370px;
+left: 215px;
+top: 696px;
+border-radius: 0px;
+}
+
+.portfolio-project-photo {
+    padding-bottom: 20px;
 }
 
 .portfolio-project-title {
@@ -305,7 +336,9 @@ font-weight: 700;
 line-height: 2;
 letter-spacing: 0.06em;
 text-align: left;
+padding-bottom: 4px;
 }
+
 .portfolio-project-subtitle {
 font-size: 16px;
 font-weight: 400;
@@ -314,4 +347,59 @@ letter-spacing: 0.03em;
 text-align: left;
 color: var(--secondary-color);
 }
+
+.portfolio-project-title,
+.portfolio-project-subtitle {
+    padding-left: 24px;
+}
+
 /*===END PORTFOLIO===*/
+
+
+
+/*===FOOTER===*/
+.footer .container {
+    height: 252px;
+width: 1600px;
+left: 0px;
+top: 2097px;
+border-radius: 0px;
+background-color: #2F303A;
+}
+
+.logo-footer {
+    font-family: var(--secondary-font);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-decoration: none;
+    color: #FFFFFF;
+     padding-left: 215px;
+     margin-top: 60px;
+}
+
+.contact-address-footer,
+.contact-mail-footer,
+.contact-phone-number-footer {   
+font-size: 14px;
+font-weight: 400;
+line-height: 1.714;
+letter-spacing: 0.03em;
+text-align: left;
+text-decoration: none;
+font-style: normal;
+padding-left: 215px;   
+}
+
+.contact-address-footer{
+   color: #FFFFFF;
+    padding-top: 20px;
+}
+.contact-mail-footer,
+.contact-phone-number-footer {
+    color: #FFFFFF99;
+}
+
+/*===END FOOTER===*/

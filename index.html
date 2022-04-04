@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  />
+    
     <link rel="stylesheet" href="./css/styles.css"> 
     
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -106,21 +110,22 @@ height="294"
 
   <ul class="our-team-list">
   <li class="our-team-item">
-    <figure>
+
+    <div class="card">
 <img class="our-team-photo"
   src="images/img4.jpg"
   alt="Mężczyzna"
   width="270"
   height="260"
 />
-<figcaption>
     <h3 class="our-team-name">John Doe</h3>
-    <p class="our-team-job">Product Designer</p>
-</figcaption>
-</figure>    
+    <p class="our-team-job">Product Designer</p>   
+    </div>
 </li>
+  
 
 <li class="our-team-item">
+  <div class="card">
 <img class="our-team-photo"
   src="images/img5.jpg"
   alt="Kobieta"
@@ -129,9 +134,11 @@ height="294"
 />
     <h3 class="our-team-name">John Doe</h3>
     <p class="our-team-job">Frontend Developer</p>
+  </div>
 </li>
 
 <li class="our-team-item">
+  <div class="card">
 <img class="our-team-photo"
 src="images/img6.jpg"
 alt="Mężczyzna"
@@ -140,9 +147,11 @@ height="260"
 />
     <h3 class="our-team-name">John Doe</h3>
     <p class="our-team-job">Marketing</p>
+  </div>
 </li>
 
 <li class="our-team-item">
+  <div class="our-team-card">
 <img class="our-team-photo"
 src="images/img7.jpg"
 alt="Mężczyzna"
@@ -151,22 +160,24 @@ height="260"
 />
     <h3 class="our-team-name">John Doe</h3>
     <p class="our-team-job">UI Designer</p>
+  </div>
 </li>
 </ul>
 </div>
 </section>
     </main>
 
-    <footer>
+    <footer class="footer">
+<div class="container">
       <a class="logo-footer" href="index.html">WebStudio</a>        
     <address>
-      <ul class="contact-list">
-          <li class="contact-item"><p class="contact-address">m. Warszawa, Aleje Jerozolimskie 21</p></li>
-          <li class="contact-item"><a class="contact-mail" href="/info@devstudio.com">info@devstudio.com</a></li>
-          <li class="contact-item"><a class="contact-phone-number" href="/+48111111111">+48 111 111 111</a></li>
+      <ul class="contact-list-footer">
+          <li class="contact-item-footer"><p class="contact-address-footer">m. Warszawa, Aleje Jerozolimskie 21</p></li>
+          <li class="contact-item-footer"><a class="contact-mail-footer" href="/info@devstudio.com">info@devstudio.com</a></li>
+          <li class="contact-item-footer"><a class="contact-phone-number-footer" href="/+48111111111">+48 111 111 111</a></li>
       </ul>   
   </address>
-
+</div>
     </footer>
 </body>
 </html>
