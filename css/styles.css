@@ -239,8 +239,10 @@ align-items: center;
 .our-team-list {
     display: flex;
     align-items: center;
-    padding-top: 50px 203px 86px 227px;
-    margin-left: 203px;
+    justify-content: space-between;
+    padding-left: 215px;
+    padding-right: 215px;
+    
 }
 
 .our-team-title {
