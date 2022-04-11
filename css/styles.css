@@ -10,7 +10,9 @@
 
 body {
     font-family: var(--main-font);
-    color: var(--main-color)
+    color: var(--main-color);
+    /* max-width: 1600px;
+    margin: 0 auto; */
 }
 
 h1,
@@ -123,7 +125,10 @@ width: 1600px;
 left: 0px;
 top: 80px;
 background-color: var(--container-color);
+/* background-image: url(.images/bacground/backgrounphoto.jpg); */
 }
+
+
 
 .main-header {
 font-size: 44px;
@@ -139,7 +144,6 @@ justify-content: center;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 40px;
-
 }
 
 .modal-btn {
